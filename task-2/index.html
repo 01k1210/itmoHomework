@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    <form action="#"  name="login-form">
+        <div><label for="">Введите email:<input type="email" required></label></div>
+        <div><label for="">Введите пароль:<input type="password" required></label></div>
+        <div><label for="">Введите ваш возраст:<input type="number" required></label></div>
+        <div><label for="">Введите имя:<input type="text"></label></div>
+        <div><label for="">Введите номер телефона:<input type="number"></label></div>
+        <input type="submit">
+    </form>
+
+    <form style="margin-top: 30px;" action="#" name="realty">
+        <div><label for="">Ввод района:<input type="text"></label>
+        <label for="">Ввод станции метро или улицы:<input type="text"></label>
+        </div>
+        <div>
+        <label for="rooms">Выбор количества комнат:</label>
+         <select name="rooms" id="rooms">
+            <optgroup label="Количество комнат ограничено">
+             <option value="1">1 комната</option>
+             <option value="2">2 комнаты</option>
+             <option value="3">3 комнаты</option>
+             </optgroup>
+         </select>
+         <label for="home">Выбор года сдачи дома:</label>
+         <select name="home" id="home">
+             <option value="1">2022</option>
+             <option value="2">2023</option>
+             <option value="3">2024</option>
+             <option value="4">2025</option>
+         </select>
+        </div>
+        <div>
+            <label for="">Укажите максимальную стоимость<input type="number" min="15000000"></label>
+        </div>
+        <div>
+            <label for="">Укажите максимальную площадь кв2<input type="number" min="80" max="300"></label>
+        </div>
+
+            <fieldset>
+                <legend>Вид ремонта:</legend>
+                <label for="">
+                    Чистовая отделка
+                    <input type="radio" name="repair" value="yes">
+                </label>
+                <label for="">
+                    Без ремонта
+                    <input type="radio" name="repair" value="no">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Наличие терассы:</legend>
+                <label for="">
+                    С терассой
+                    <input type="radio" name="balcony" value="yes">
+                </label>
+                <label for="">
+                    Без терассы
+                    <input type="radio" name="balcony" value="no">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>выбор класса:</legend>
+                <label for="">бизнес-класс<input type="checkbox" name="size[]" value="1"></label>
+                <label for="">премиум<input type="checkbox" name="size[]" value="2"></label> 
+                <label for="">deluxe<input type="checkbox" name="size[]" value="3"></label>
+            </fieldset>
+
+            <div>
+                <label for="floor">Выбор этажа:</label>
+                <select name="floor" id="floor">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="4">5</option>
+                    <option value="4">6</option>
+                    <option value="4">7</option>
+                    <option value="4">8</option>
+                </select>
+                <label for="">не первый<input type="radio" name="floor" value="yes"></label>
+                <label for="">не последний<input type="radio" name="floor" value="no"></label>
+            </div>
+            <input type="submit">
+    </form>
+</body>
+</html>

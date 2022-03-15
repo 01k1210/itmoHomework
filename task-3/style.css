@@ -1,0 +1,145 @@
+/* --unit-1 */
+*{
+    margin: 0;
+}
+body{
+    background-image: url(/Преимущества.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    background-color: orange;
+}
+
+.unit-1 a{
+    text-decoration: none;
+    color: orangered;
+}
+
+li:first-child{
+    border-bottom: 3px solid orangered;
+}
+
+li{
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.none{
+    display: none;
+}
+/* --unit-2-- */
+.unit-2{
+    margin-top: 15px;
+}
+
+.unit-2 h2{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.unit-2 a{
+    color: red;
+    text-decoration: none;
+}
+.text{
+    color: red;
+    text-transform: uppercase;
+    }
+
+.strike{
+    color: red;
+    text-decoration:line-through;
+}
+.unit-2 p:last-child{
+    margin-top: 20px;
+}
+
+/*-- unit-3--*/
+.unit-3{
+    margin-top: 30px;
+}
+.unit-3-title{
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+}
+
+.unit-3-img{
+    width: 100%;
+    height: auto;
+}
+
+.unit-3-img--botton{
+    width: 390px;
+    height: auto;
+}
+
+.unit-3-text{
+    margin: 10px 0;
+}
+
+.unit-3-text a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.unit-3-botton{
+    margin-top: 25px;
+}
+.unit-3-botton img{
+    width: 33%;
+}
+.unit-3-botton img:first-child{
+    opacity: .1;
+}
+.unit-3-botton img:nth-child(2n){
+    opacity: .5;
+}
+
+/*-- unit-4--*/
+.unit-4{
+    margin: 30px 0;
+}
+.unit-4-items a{
+    text-decoration: none;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.unit-4-items a:nth-child(3){
+    background-color: orange;
+}
+
+/*-- unit-5--*/
+.unit-5{
+    display: flex;
+    justify-content: space-around;
+}
+.unit-5-item{
+    width: 300px;
+}
+.unit-5-item-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.unit-5-item-content{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+.unit-5-item-content img{
+    width: 50px;
+    height: auto;
+    border-radius: 30px;
+}

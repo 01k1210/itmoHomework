@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu_item{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu_item a{
+    z-index: 4;
+    color: rgb(86, 4, 163);
+    text-decoration: none;
+}
+.menu_item li{
+    padding: 10px 40px;
+}
+.menu_item li:hover{
+    background-color: rgb(206, 104, 209);
+}
+
+.menu_item-horizontal{
+    flex-direction: column;
+}
+
+
+/* Задача-2 */
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+}
+.menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.menu li{
+padding: 10px 20px;
+}
+.wrap{
+    padding: 20px 0;
+    display: flex;
+}
+.main{
+    width: 20%;
+}
+.main ul{
+    text-align: center;
+}
+.main a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.main li{
+    margin-bottom: 30px;
+}
+.item-wrap{
+    padding: 5px;
+}
+.items{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.item-1{
+    height: 100%;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+}
+.item-1 img{
+    width: 95%;
+    margin: 0 auto;
+}
+.item-1 h3{
+    margin: 15px 0;
+}
+.text, .sail{
+    margin: 5px 0;
+}
+.sail{
+    margin-top: auto;
+}
+.footer{
+    background-color: orangered;
+    height: 100px;
+}

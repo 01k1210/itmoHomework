@@ -2,6 +2,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+.menu_items{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .menu_item{
     align-items: center;
     display: flex;
@@ -10,18 +14,20 @@
     padding-left: 0;
 }
 .menu_item a{
-    z-index: 4;
+    display: block;
+    padding: 10px 40px;
     color: rgb(86, 4, 163);
     text-decoration: none;
 }
 .menu_item li{
-    padding: 10px 40px;
+    width: 100%;
+    text-align: center;
 }
 .menu_item li:hover{
     background-color: rgb(206, 104, 209);
 }
 
-.menu_item-horizontal{
+.horizontal{
     flex-direction: column;
 }
 
@@ -38,6 +44,8 @@ ul{
     background-color: bisque;
 }
 .menu{
+    margin: 0 20px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -80,6 +88,7 @@ padding: 10px 20px;
     align-items: stretch;
 }
 .item-1{
+    padding: 10px;
     height: 100%;
     background-color: orangered;
     display: flex;

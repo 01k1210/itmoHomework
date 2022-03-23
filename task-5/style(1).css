@@ -1,4 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
+    height: 100vh;
     margin: 0;
 }
 .menu{
@@ -9,18 +14,18 @@ body{
     justify-content: center;
     }
     li{
-        display: block;
-        padding: 10px 40px;
+        height: 50px;
         background-color: rgb(252, 71, 16);
     }
     li a{
+        display: block;
+        padding: 14px 40px;
         color: #fff;
         text-align: center;
         text-decoration: none;
     }
     li a:hover{
-        padding: 8px 0;
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
     }
     .menu, ul{
       list-style: none;
@@ -30,11 +35,73 @@ body{
         display: none;
     }
     .menu ul li{
-        margin-left: -50px;
+        margin-left: -25px;
     }
     .menu li:hover ul{
         position: absolute;
-        top: 39px;
+        top: 50px;
         display: block;
     }
-    
+
+    .wrap{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   #form-wrap{
+       position: relative;
+       padding: 50px;
+       display: none;
+       width: 400px;
+       height: 300px;
+       background-color: rgb(200 145 63);
+       box-shadow: 0 5px 50px rgb(0 0 0 / 83%);
+   } 
+   #form-wrap:target {
+    display: block;
+}
+#form-wrap a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.text , .password{
+    background-color: rgb(200 145 63);
+    width: 100%;
+    margin-bottom: 20px;
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.password::-webkit-input-placeholder{
+    color: #fff; 
+}
+.text::-webkit-input-placeholder{
+    color: #fff; 
+}
+.form-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+label{
+    color: #fff;
+}
+#remember{
+    display: none;
+}
+label::before{
+    content: "";
+}
+#remember:checked + label::before{
+    margin-right: 5px;
+    content: "✅";
+}

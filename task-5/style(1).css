@@ -56,17 +56,27 @@ body{
        width: 400px;
        height: 300px;
        background-color: rgb(200 145 63);
-       box-shadow: 0 5px 50px rgb(0 0 0 / 83%);
    } 
    #form-wrap:target {
     display: block;
 }
-#form-wrap a{
-    position: absolute;
+#form-wrap a::after{
     right: 10px;
     top: 10px;
-    text-decoration: none;
-    color: #fff;
+    position: absolute;
+    color: white;
+    content: "X";
+    cursor: pointer;
+}
+#form-wrap a::before{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    content: "";
+    cursor: default;
 }
 .text , .password{
     background-color: rgb(200 145 63);
@@ -104,4 +114,7 @@ label::before{
 #remember:checked + label::before{
     margin-right: 5px;
     content: "✅";
+}
+form{
+    position: relative;
 }

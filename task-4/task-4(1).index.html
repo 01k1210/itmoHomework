@@ -10,7 +10,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="menu col-12">
+        <div class="menu col-lg-12">
+            <input class="input-mobile" type="text" placeholder="Поиск">
             <ul>
                 <li>
                     <a href="#">bl</a>
@@ -25,29 +26,33 @@
                     <a href="#">Link3</a>
                 </li>
             </ul>
-            <input type="text" placeholder="Поиск">
+            <input class="input-decst" type="text" placeholder="Поиск">
         </div>
 
         <div class="wrap">
             <div class="main">
-                <ul>
-                    <li>
-                        <a href="#">Category 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Category 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Category 3</a>
-                    </li>
-                    <li>
-                        <a href="#">Category 4</a>
-                    </li>
+                <!-- <a href="#">Category</a> -->
+                <ul class="main-nav">
+                    <li><a href="#mobile-menu">Category</a></li>
+                    <ul id="mobile-menu">
+                        <li>
+                            <a href="#">Category 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Category 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Category 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Category 4</a>
+                        </li>
+                    </ul>
                 </ul>
             </div>
 
             <div class="items">
-                <div class="item-wrap col-3">
+                <div class="item-wrap col-3 ">
                     <div class="item-1">
                         <h3>Lorem, ipsum.</h3>
                         <img src="/img/1.jpg" alt="белка">

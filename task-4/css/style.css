@@ -49,8 +49,48 @@ ul{
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 992px) {
+    .menu{
+        display: block;
+        padding-top: 10px;
+    }
+    .menu ul li:first-child {
+        margin-right: auto;
+      }
+    .input-decst{
+        display: none;
+    }
+}
+@media (max-width: 539px) {
+    .menu ul li:nth-child(1){
+        width: 100%;
+        background-color: orangered;
+        text-align: center;
+
+    }
+    .menu ul li:nth-child(2){
+        display: none;
+    }
+    .menu ul li:nth-child(3){
+        display: none;
+    }
+    .menu ul li:nth-child(4){
+        display: none;
+    }
+}
+.input-mobile{
+display: none;
+}
+
+@media (max-width: 992px) {
+    .input-mobile{
+        display: block;
+        margin-left: auto;
+        }
+}
 .menu ul{
     display: flex;
+    margin-top: 10px;
 }
 .menu a{
     text-transform: uppercase;
@@ -64,12 +104,59 @@ padding: 10px 20px;
     padding: 20px 0;
     display: flex;
 }
+@media (max-width: 992px) {
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .main{
     width: 20%;
 }
+@media (max-width: 992px) {
+    .main{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+.main-nav >li{
+    display: none;
+}
+@media (max-width: 539px) {
+    .main-nav >li{
+        display: block;
+    }
+}
+@media (max-width: 992px) {
+    ul>ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+ul>ul{
+    width: 100%;
+}
+@media (max-width: 539px) {
+    .main-nav {
+        flex-direction: column;
+    }
+    ul>ul{
+        flex-direction: column;
+        display: none;
+    }
+    ul>ul:target{
+        display: block;
+    }
+    .input-mobile{
+        display: none;
+    }
+}
+
+
 .main ul{
     text-align: center;
 }
+
 .main a{
     text-transform: uppercase;
     text-decoration: none;
@@ -86,6 +173,12 @@ padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+}
+@media (max-width: 992px) {
+    .items{
+        width: 100%;
+        padding: 0 20px;
+    }
 }
 .item-1{
     padding: 10px;
